@@ -1,0 +1,23 @@
+[
+  {
+    "method": "SEDGE_LWS",
+    "ess": 98.85025787353516,
+    "empty_bank_fraction": 0.0,
+    "missing_compatible_bank_fraction": 0.0,
+    "selected_bridge_overlap": 0.8535
+  },
+  {
+    "method": "SEDGE_oracle_weights",
+    "ess": 101.13080320331191,
+    "empty_bank_fraction": 0.0,
+    "missing_compatible_bank_fraction": 0.0,
+    "selected_bridge_overlap": 0.9035
+  },
+  {
+    "method": "SEDGE_unweighted",
+    "ess": 1024.0,
+    "empty_bank_fraction": 0.0,
+    "missing_compatible_bank_fraction": 0.0,
+    "selected_bridge_overlap": 0.1325
+  }
+]

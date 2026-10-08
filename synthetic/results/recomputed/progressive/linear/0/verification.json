@@ -1,0 +1,8 @@
+{
+  "suite": "progressive",
+  "case": "linear",
+  "seed": 0,
+  "methods": 26,
+  "max_absolute_error": 0.0,
+  "tolerance": 1e-10
+}

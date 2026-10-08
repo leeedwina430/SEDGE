@@ -1,0 +1,11 @@
+{
+  "validation_outside_support": 0,
+  "full_validation_nll": 0.9401480534340042,
+  "density_mae_on_support_union": 0.08963751323554053,
+  "population_conditional_tv": 0.035401738697823835,
+  "density_quadrature_points": 1025,
+  "population_conditional_mean_mae": 0.016658141486225943,
+  "monte_carlo_mean_draws": 128,
+  "n": 512,
+  "note": "Mean MAE, density MAE and integrated TV are distinct; oracle density diagnostics use population factors."
+}

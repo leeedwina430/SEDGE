@@ -1,0 +1,58 @@
+{
+  "name": "multimodal_balanced_strict",
+  "individual_X2_sets": {
+    "Z1": [
+      [
+        -1,
+        -0.4
+      ],
+      [
+        0.4,
+        1
+      ]
+    ],
+    "Z2": [
+      [
+        -0.5,
+        0.5
+      ]
+    ]
+  },
+  "joint_X2_set": [
+    [
+      -0.5,
+      -0.4
+    ],
+    [
+      0.4,
+      0.5
+    ]
+  ],
+  "individual_widths": [
+    1.2,
+    1.0
+  ],
+  "joint_width": 0.2,
+  "each_mode_width": 0.1,
+  "tightness_ratio": 0.2,
+  "conditional_exclusion": [
+    0.006666666666666667,
+    0.008
+  ],
+  "overall_exclusion": 0.00015999999999999996,
+  "marginal_positive_probability": [
+    0.023999999999999994,
+    0.019999999999999993
+  ],
+  "posterior_right_mode_probability": 0.5,
+  "passes_conditional_1pct": true,
+  "accepted": true,
+  "acceptance_threshold": 0.01,
+  "reference_exception": false,
+  "method": "piecewise adaptive integration of exact private-window probabilities",
+  "root_support": [
+    -1,
+    1
+  ],
+  "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter."
+}

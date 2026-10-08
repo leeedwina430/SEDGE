@@ -1,0 +1,9 @@
+{
+  "files_checked": 983,
+  "tensor_archives_checked": 78,
+  "pdfs_inspected": 13,
+  "private_substrings_checked": 4,
+  "git_history_checked": false,
+  "findings": [],
+  "scope": "Distributed files, decoded tensor archive strings, extracted PDF text and metadata. Hosting-account identity and cached previous commits are outside scope."
+}

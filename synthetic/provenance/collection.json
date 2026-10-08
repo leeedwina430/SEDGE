@@ -1,0 +1,45 @@
+{
+  "collection_date": "2026-10-08",
+  "scope": "Reported five-DGP SEDGE LWR/LGD tables and all 13 underlying benchmark settings",
+  "settings": 13,
+  "seeds_per_setting": 3,
+  "completed_runs": 39,
+  "per_seed_method_records": 1014,
+  "checkpoints_included": false,
+  "full_training_reexecuted": false,
+  "metric_recomputation_checks": [
+    {
+      "suite": "multimodal",
+      "case": "multimodal_weighted_reference",
+      "seed": 0,
+      "methods": 26,
+      "max_absolute_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "suite": "progressive",
+      "case": "linear",
+      "seed": 0,
+      "methods": 26,
+      "max_absolute_error": 0.0,
+      "tolerance": 1e-10
+    }
+  ],
+  "changes": [
+    "Local imports and output paths",
+    "Removed unrelated historical launch/import chain",
+    "Portable training/table/metric entry points",
+    "Numeric comparisons allow documented platform roundoff",
+    "Removed PDF document metadata without changing page text",
+    "Replaced identifying published commit history with anonymous root snapshot",
+    "Added repeatable file and commit-identity audit"
+  ],
+  "verification_environment": {
+    "python": "3.10",
+    "torch": "2.0.1+cu117",
+    "numpy": "1.22.3",
+    "scipy": "1.11.3",
+    "cuda_available": false
+  },
+  "historical_environment_lockfile_available": false
+}

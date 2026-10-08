@@ -1,0 +1,5 @@
+# Versions available for CPU verification on the collection host.
+# Install the CUDA-compatible torch build for your system for full experiments.
+numpy==1.22.3
+scipy==1.11.3
+torch==2.0.1

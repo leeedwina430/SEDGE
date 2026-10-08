@@ -1,0 +1,87 @@
+% Standalone description of the five displayed DGPs, grouped into three families.
+\documentclass[11pt]{article}
+\usepackage[a4paper,landscape,margin=14mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array}
+\usepackage[table]{xcolor}
+\setlength{\parindent}{0pt}
+\definecolor{sedgepurple}{HTML}{F0EDF7}
+\newcommand{\ind}{\mathbf{1}}
+\newcommand{\R}{\mathcal{R}}
+\begin{document}
+\section*{Three DGP families: five benchmark settings}
+Write $C=X_2$ for the shared bridge. All root coordinates are mutually independent before selection. Binary roots are uniform on $[-1,1]$; continuous roots are uniform on $[0,1]$. $S=1$ denotes retention for training. Only a joint specification event is removed; individual specification support remains present.
+
+\begin{table}[h!]
+\centering\small
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{p{24mm}p{90mm}p{41mm}p{77mm}}
+\toprule
+Setting / family & Mechanisms & Training specifications & Held-out test specifications \\
+\midrule
+Weighted Discrete / binary multimodal &
+$Z_1=\ind\{C\in A,\ |X_1|\leq0.25\}$;\newline
+$Z_2=\ind\{C\in B,\ |X_3|\leq h(C)\}$.\newline
+$A=[-1,-0.4]\cup[0.4,1]$, $B=[-0.5,0.5]$; $h(C)=0.05$ if $C<0$, otherwise $0.25$. &
+$(Z_1,Z_2)\in\{(0,0),(1,0),(0,1)\}$; each marginal remains $\{0,1\}$. & $(Z_1,Z_2)=(1,1)$ only. Two bridge modes have posterior mass $1/6$ (negative) and $5/6$ (positive). \\
+\midrule
+Linear / scalar continuous & $Z_1=0.8X_1+0.6C$;\newline $Z_2=0.8X_3+0.6C$. & Each marginal support: $[0,1.4]$; joint support $\mathcal S_Z\setminus\R$. & $I_1=[0.3135,0.3165]$;\newline $I_2=[1.0835,1.0865]$. \\
+Cubic / scalar continuous & $Z_1=0.8X_1+0.6C$;\newline $Z_2=0.8X_3+0.6C^3$. & Each marginal support: $[0,1.4]$; joint support $\mathcal S_Z\setminus\R$. & $I_1=[0.3135,0.3165]$;\newline $I_2=[0.862803125,0.865803125]$. \\
+Smoothstep / scalar continuous & $Z_1=0.8X_1+0.6C$;\newline $Z_2=0.8X_3+0.6(3C^2-2C^3)$. & Each marginal support: $[0,1.4]$; joint support $\mathcal S_Z\setminus\R$. & $I_1=[0.3135,0.3165]$;\newline $I_2=[1.07601875,1.07901875]$. \\
+\midrule
+2D Bridge / vector continuous &
+$C=(u,v)$;\newline
+$Z_1=0.7u+0.3v+(0.8+0.15uv)X_1$;\newline
+$Z_2=1-0.3u-0.7v+$\newline
+$\qquad[0.8+0.15(1-u)(1-v)]X_3$. & Each marginal support: $[0,1.95]$; joint support $\mathcal S_Z\setminus\R$. & $I_1=I_2=[0.3485,0.3515]$. \\
+\bottomrule
+\end{tabular}
+\caption{Exact implemented mechanisms and split definitions. For continuous settings, $\R=I_1\times I_2$ is the excluded/test rectangle and $\mathcal S_Z$ is the mechanism-induced joint support. Training is not uniform over the displayed marginal ranges or their Cartesian product. All rectangle side lengths are $0.003$; there is no additional exclusion buffer.}
+\end{table}
+
+\textbf{Sample counts.} Each seed draws a 200,000-root candidate pool, then selects 20,000 retained training rows and 2,000 retained validation rows. There are three seeds. Binary testing uses 2,000 conditional reference samples at $(1,1)$. Continuous testing uses 64 held-out target pairs, with 32 reference draws per target (2,048 outputs). Continuous targets are drawn from the population conditional on the held-out rectangle; they are not assumed uniform in that rectangle.
+
+\clearpage
+\section*{Bridge compatibility and selection audit}
+For a fixed target $z$, define $F_i(z_i)=\{c:\exists x_{\mathrm{private}}\text{ in root support with }f_i(x_{\mathrm{private}},c)=z_i\}$. Thus compatibility means that a private root \emph{can} satisfy the specification; it is not sufficient for an arbitrary generated private root to satisfy it.
+
+\begin{table}[h!]
+\centering\small\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{p{25mm}p{50mm}p{50mm}p{58mm}p{41mm}}
+\toprule
+Setting & Bridge satisfying $Z_1$ alone & Bridge satisfying $Z_2$ alone & Bridge satisfying both & Center measure reduction \\
+\midrule
+Weighted Discrete & $[-1,-0.4]\cup[0.4,1]$ & $[-0.5,0.5]$ & $[-0.5,-0.4]\cup[0.4,0.5]$ & Lengths $1.2,1.0\to0.2$; ratio $0.20$. \\
+Linear & $[0,0.525]$ & $[0.475,1]$ & $[0.475,0.525]$ & $0.525,0.525\to0.05$; ratio $0.09524$. \\
+Cubic & $[0,0.525]$ & $[0.475,1]$ & $[0.475,0.525]$ & Same center lengths. \\
+Smoothstep & $[0,0.525]$ & $[0.475,1]$ & $[0.475,0.525]$ & Same center lengths. \\
+2D Bridge & $\{(u,v)\in[0,1]^2:\ 0.7u+0.3v\leq0.35\}$ & $\{(u,v)\in[0,1]^2:\ 0.3u+0.7v\geq0.65\}$ & Intersection of the two polygons. Coordinate projections: $u\in[0,0.125]$, $v\in[0.875,1]$; \textbf{not their Cartesian product}. & Areas $2/7,2/7\to1/112$; ratio $1/32=0.03125$. \\
+\bottomrule
+\end{tabular}
+\caption{Exact compatibility sets at the test-rectangle center (binary target $(1,1)$). The scalar continuous centers were chosen to share the same bridge overlap, isolating changes in mechanism. The ratio is joint measure divided by the smaller individual measure.}
+\end{table}
+
+\textbf{Away from the center.} For the three scalar continuous mechanisms, let $g(c)=c$, $c^3$, or $3c^2-2c^3$. Throughout the specified test rectangle,
+\[
+F_1(z_1)=[0,z_1/0.6],\qquad
+F_2(z_2)=[g^{-1}((z_2-0.8)/0.6),1],\qquad
+F_1\cap F_2=[g^{-1}((z_2-0.8)/0.6),z_1/0.6].
+\]
+The joint width ranges are $[0.045,0.055]$ (Linear), approximately $[0.043835,0.056223]$ (Cubic), and $[0.045829,0.054171]$ (Smoothstep). For 2D, replace $0.35$ by $z_1$ and $0.65$ by $1-z_2$ in the inequalities; the audited joint area varies approximately from $0.00840$ to $0.00947$.
+
+\begin{table}[h!]
+\centering\small\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrrrrl}
+\toprule
+Setting & $P(S=0\mid E_1)$ & $P(S=0\mid E_2)$ & $P(S=0)$ & Threshold & Assessment \\
+\midrule
+Weighted Discrete & $2.5\%$ & $5.0\%$ & $0.375\%$ & $1\%$ & Relaxed reference; does not pass \\
+Linear & $0.0357143\%$ & $0.0357143\%$ & $0.0000703124\%$ & $1\%$ & Passes band-conditional audit \\
+Cubic & $0.0357232\%$ & $0.0357224\%$ & $0.0000703218\%$ & $1\%$ & Passes band-conditional audit \\
+Smoothstep & $0.0357152\%$ & $0.0357151\%$ & $0.0000703089\%$ & $1\%$ & Passes band-conditional audit \\
+2D Bridge & $0.0116082\%$ & $0.0116082\%$ & $0.0000123245\%$ & $1\%$ & Passes band-conditional audit \\
+\bottomrule
+\end{tabular}
+\caption{Operational Assumption-3 exclusion audit, not a binary assertion that the theoretical assumption holds exactly. $E_i=\{Z_i=1\}$ for binary data and $E_i=\{Z_i\in I_i\}$ for continuous data. Conditional continuous rates use the saved refined quadrature; overall rates use the original saved quadrature.}
+\end{table}
+These continuous conditional rates are \textbf{band averages}, not verified bounds on $\sup_{z_i\in I_i}P(S=0\mid Z_i=z_i)$. Root independence holds before selection; selection can distort the observed factors. Small exclusion and retained marginal support do not prove an undistorted likelihood or accurate learned models. Geometric compatibility above uses exact target equations; the result evaluator separately allows $|f_i(X)-z_i|\leq0.005$ on each continuous specification and also requires root support.
+\end{document}

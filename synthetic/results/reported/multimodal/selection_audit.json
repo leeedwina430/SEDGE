@@ -1,0 +1,392 @@
+[
+  {
+    "name": "multimodal_balanced_strict",
+    "individual_X2_sets": {
+      "Z1": [
+        [
+          -1,
+          -0.4
+        ],
+        [
+          0.4,
+          1
+        ]
+      ],
+      "Z2": [
+        [
+          -0.5,
+          0.5
+        ]
+      ]
+    },
+    "joint_X2_set": [
+      [
+        -0.5,
+        -0.4
+      ],
+      [
+        0.4,
+        0.5
+      ]
+    ],
+    "individual_widths": [
+      1.2,
+      1.0
+    ],
+    "joint_width": 0.2,
+    "each_mode_width": 0.1,
+    "tightness_ratio": 0.2,
+    "conditional_exclusion": [
+      0.006666666666666667,
+      0.008
+    ],
+    "overall_exclusion": 0.00015999999999999996,
+    "marginal_positive_probability": [
+      0.023999999999999994,
+      0.019999999999999993
+    ],
+    "posterior_right_mode_probability": 0.5,
+    "passes_conditional_1pct": true,
+    "accepted": true,
+    "acceptance_threshold": 0.01,
+    "reference_exception": false,
+    "method": "piecewise adaptive integration of exact private-window probabilities",
+    "root_support": [
+      -1,
+      1
+    ],
+    "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter.",
+    "reference_sample_right_mode_fraction": 0.514,
+    "example_training_label_counts": {
+      "[0, 0]": 19098,
+      "[1, 0]": 494,
+      "[0, 1]": 408,
+      "[1, 1]": 0
+    }
+  },
+  {
+    "name": "multimodal_balanced_reference",
+    "individual_X2_sets": {
+      "Z1": [
+        [
+          -1,
+          -0.4
+        ],
+        [
+          0.4,
+          1
+        ]
+      ],
+      "Z2": [
+        [
+          -0.5,
+          0.5
+        ]
+      ]
+    },
+    "joint_X2_set": [
+      [
+        -0.5,
+        -0.4
+      ],
+      [
+        0.4,
+        0.5
+      ]
+    ],
+    "individual_widths": [
+      1.2,
+      1.0
+    ],
+    "joint_width": 0.2,
+    "each_mode_width": 0.1,
+    "tightness_ratio": 0.2,
+    "conditional_exclusion": [
+      0.04166666666666666,
+      0.04999999999999999
+    ],
+    "overall_exclusion": 0.006249999999999999,
+    "marginal_positive_probability": [
+      0.15,
+      0.125
+    ],
+    "posterior_right_mode_probability": 0.5,
+    "passes_conditional_1pct": false,
+    "accepted": true,
+    "acceptance_threshold": 0.0500000001,
+    "reference_exception": true,
+    "method": "piecewise adaptive integration of exact private-window probabilities",
+    "root_support": [
+      -1,
+      1
+    ],
+    "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter.",
+    "reference_sample_right_mode_fraction": 0.5265,
+    "example_training_label_counts": {
+      "[0, 0]": 14696,
+      "[1, 0]": 2982,
+      "[0, 1]": 2322,
+      "[1, 1]": 0
+    }
+  },
+  {
+    "name": "multimodal_weighted_strict",
+    "individual_X2_sets": {
+      "Z1": [
+        [
+          -1,
+          -0.4
+        ],
+        [
+          0.4,
+          1
+        ]
+      ],
+      "Z2": [
+        [
+          -0.5,
+          0.5
+        ]
+      ]
+    },
+    "joint_X2_set": [
+      [
+        -0.5,
+        -0.4
+      ],
+      [
+        0.4,
+        0.5
+      ]
+    ],
+    "individual_widths": [
+      1.2,
+      1.0
+    ],
+    "joint_width": 0.2,
+    "each_mode_width": 0.1,
+    "tightness_ratio": 0.2,
+    "conditional_exclusion": [
+      0.004,
+      0.008
+    ],
+    "overall_exclusion": 9.599999999999998e-05,
+    "marginal_positive_probability": [
+      0.023999999999999994,
+      0.011999999999999997
+    ],
+    "posterior_right_mode_probability": 0.8333333333333334,
+    "passes_conditional_1pct": true,
+    "accepted": true,
+    "acceptance_threshold": 0.01,
+    "reference_exception": false,
+    "method": "piecewise adaptive integration of exact private-window probabilities",
+    "root_support": [
+      -1,
+      1
+    ],
+    "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter.",
+    "reference_sample_right_mode_fraction": 0.829,
+    "example_training_label_counts": {
+      "[0, 0]": 19273,
+      "[1, 0]": 501,
+      "[0, 1]": 226,
+      "[1, 1]": 0
+    }
+  },
+  {
+    "name": "multimodal_weighted_reference",
+    "individual_X2_sets": {
+      "Z1": [
+        [
+          -1,
+          -0.4
+        ],
+        [
+          0.4,
+          1
+        ]
+      ],
+      "Z2": [
+        [
+          -0.5,
+          0.5
+        ]
+      ]
+    },
+    "joint_X2_set": [
+      [
+        -0.5,
+        -0.4
+      ],
+      [
+        0.4,
+        0.5
+      ]
+    ],
+    "individual_widths": [
+      1.2,
+      1.0
+    ],
+    "joint_width": 0.2,
+    "each_mode_width": 0.1,
+    "tightness_ratio": 0.2,
+    "conditional_exclusion": [
+      0.024999999999999998,
+      0.049999999999999996
+    ],
+    "overall_exclusion": 0.0037499999999999994,
+    "marginal_positive_probability": [
+      0.15,
+      0.075
+    ],
+    "posterior_right_mode_probability": 0.8333333333333333,
+    "passes_conditional_1pct": false,
+    "accepted": true,
+    "acceptance_threshold": 0.0500000001,
+    "reference_exception": true,
+    "method": "piecewise adaptive integration of exact private-window probabilities",
+    "root_support": [
+      -1,
+      1
+    ],
+    "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter.",
+    "reference_sample_right_mode_fraction": 0.8355,
+    "example_training_label_counts": {
+      "[0, 0]": 15745,
+      "[1, 0]": 2854,
+      "[0, 1]": 1401,
+      "[1, 1]": 0
+    }
+  },
+  {
+    "name": "multimodal_curved_strict",
+    "individual_X2_sets": {
+      "Z1": [
+        [
+          -1,
+          -0.4
+        ],
+        [
+          0.4,
+          1
+        ]
+      ],
+      "Z2": [
+        [
+          -0.5,
+          0.5
+        ]
+      ]
+    },
+    "joint_X2_set": [
+      [
+        -0.5,
+        -0.4
+      ],
+      [
+        0.4,
+        0.5
+      ]
+    ],
+    "individual_widths": [
+      1.2,
+      1.0
+    ],
+    "joint_width": 0.2,
+    "each_mode_width": 0.1,
+    "tightness_ratio": 0.2,
+    "conditional_exclusion": [
+      0.00247768096809681,
+      0.00576566272
+    ],
+    "overall_exclusion": 4.8047189333333336e-05,
+    "marginal_positive_probability": [
+      0.019392,
+      0.008333333333333333
+    ],
+    "posterior_right_mode_probability": 0.7043990530198756,
+    "passes_conditional_1pct": true,
+    "accepted": true,
+    "acceptance_threshold": 0.01,
+    "reference_exception": false,
+    "method": "piecewise adaptive integration of exact private-window probabilities",
+    "root_support": [
+      -1,
+      1
+    ],
+    "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter.",
+    "reference_sample_right_mode_fraction": 0.7185,
+    "example_training_label_counts": {
+      "[0, 0]": 19487,
+      "[1, 0]": 352,
+      "[0, 1]": 161,
+      "[1, 1]": 0
+    }
+  },
+  {
+    "name": "multimodal_curved_reference",
+    "individual_X2_sets": {
+      "Z1": [
+        [
+          -1,
+          -0.4
+        ],
+        [
+          0.4,
+          1
+        ]
+      ],
+      "Z2": [
+        [
+          -0.5,
+          0.5
+        ]
+      ]
+    },
+    "joint_X2_set": [
+      [
+        -0.5,
+        -0.4
+      ],
+      [
+        0.4,
+        0.5
+      ]
+    ],
+    "individual_widths": [
+      1.2,
+      1.0
+    ],
+    "joint_width": 0.2,
+    "each_mode_width": 0.1,
+    "tightness_ratio": 0.2,
+    "conditional_exclusion": [
+      0.015485506050605058,
+      0.03603539199999999
+    ],
+    "overall_exclusion": 0.001876843333333333,
+    "marginal_positive_probability": [
+      0.12119999999999999,
+      0.052083333333333336
+    ],
+    "posterior_right_mode_probability": 0.7043990530198756,
+    "passes_conditional_1pct": false,
+    "accepted": true,
+    "acceptance_threshold": 0.0500000001,
+    "reference_exception": true,
+    "method": "piecewise adaptive integration of exact private-window probabilities",
+    "root_support": [
+      -1,
+      1
+    ],
+    "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter.",
+    "reference_sample_right_mode_fraction": 0.7165,
+    "example_training_label_counts": {
+      "[0, 0]": 16588,
+      "[1, 0]": 2430,
+      "[0, 1]": 982,
+      "[1, 1]": 0
+    }
+  }
+]

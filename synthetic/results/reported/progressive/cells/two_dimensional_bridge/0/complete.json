@@ -1,0 +1,55 @@
+{
+  "implementation_version": 2,
+  "case": {
+    "name": "two_dimensional_bridge",
+    "kind": "two_dimensional",
+    "width": 0.05
+  },
+  "seed": 0,
+  "seconds": 548.2097695820266,
+  "methods": [
+    "CD",
+    "compositional_CD",
+    "SEDGE_LWS",
+    "SEDGE_oracle_weights",
+    "SEDGE_unweighted",
+    "SEDGE_dense_LGD_s0.5",
+    "SEDGE_LGD_s0.5",
+    "CG_sparse_factorized_s0.5",
+    "CG_dense_factorized_s0.5",
+    "CG_dense_joint_s0.5",
+    "SEDGE_dense_LGD_s1",
+    "SEDGE_LGD_s1",
+    "CG_sparse_factorized_s1",
+    "CG_dense_factorized_s1",
+    "CG_dense_joint_s1",
+    "SEDGE_dense_LGD_s2",
+    "SEDGE_LGD_s2",
+    "CG_sparse_factorized_s2",
+    "CG_dense_factorized_s2",
+    "CG_dense_joint_s2",
+    "additive_mean",
+    "additive_residual",
+    "compositional_mean",
+    "compositional_residual",
+    "rep4ex_mean",
+    "rep4ex_residual"
+  ],
+  "training_rows": 20000,
+  "evaluation_rows": 2048,
+  "parameters": {
+    "CD": 238276,
+    "prior": 237892,
+    "individual_Z1": 238084,
+    "individual_Z2": 238084,
+    "anchor": 237699,
+    "private": 237313
+  },
+  "gradient_norm_clip": 50,
+  "likelihood": "Bernoulli for binary; conditional spline flows otherwise",
+  "scales": [
+    0.5,
+    1.0,
+    2.0
+  ]
+}

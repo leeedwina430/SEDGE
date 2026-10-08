@@ -1,0 +1,58 @@
+{
+  "name": "multimodal_curved_strict",
+  "individual_X2_sets": {
+    "Z1": [
+      [
+        -1,
+        -0.4
+      ],
+      [
+        0.4,
+        1
+      ]
+    ],
+    "Z2": [
+      [
+        -0.5,
+        0.5
+      ]
+    ]
+  },
+  "joint_X2_set": [
+    [
+      -0.5,
+      -0.4
+    ],
+    [
+      0.4,
+      0.5
+    ]
+  ],
+  "individual_widths": [
+    1.2,
+    1.0
+  ],
+  "joint_width": 0.2,
+  "each_mode_width": 0.1,
+  "tightness_ratio": 0.2,
+  "conditional_exclusion": [
+    0.00247768096809681,
+    0.005765662719999999
+  ],
+  "overall_exclusion": 4.8047189333333336e-05,
+  "marginal_positive_probability": [
+    0.019392,
+    0.008333333333333335
+  ],
+  "posterior_right_mode_probability": 0.7043990530198756,
+  "passes_conditional_1pct": true,
+  "accepted": true,
+  "acceptance_threshold": 0.01,
+  "reference_exception": false,
+  "method": "piecewise adaptive integration of exact private-window probabilities",
+  "root_support": [
+    -1,
+    1
+  ],
+  "note": "Two 0.1-wide modes. Reference regime is explicitly not 1%-compliant; its maximum conditional exclusion is bounded by 5%. No performance filter."
+}

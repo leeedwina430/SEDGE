@@ -1,0 +1,37 @@
+{
+  "name": "discrete_squares_reference",
+  "individual_X2_ranges": [
+    [
+      0,
+      1
+    ],
+    [
+      -0.9,
+      0.1
+    ]
+  ],
+  "joint_X2_range": [
+    0,
+    0.1
+  ],
+  "individual_bridge_width": [
+    1,
+    1
+  ],
+  "joint_bridge_width": 0.1,
+  "conditional_exclusion": [
+    0.05,
+    0.05
+  ],
+  "overall_exclusion": 0.0125,
+  "passes_conditional_1pct": false,
+  "accepted": true,
+  "reference_exception": true,
+  "tightness_ratio": 0.1,
+  "method": "analytic",
+  "root_support": [
+    -1,
+    1
+  ],
+  "caveat": "Historical mandatory reference explicitly retains 5% conditional exclusion; not an assumption-compliant result."
+}

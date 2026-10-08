@@ -1,0 +1,6 @@
+{
+  "step": 20000,
+  "best_step": 17500,
+  "best_validation_loss": 0.6005080780982972,
+  "elapsed_seconds": 57.309214865090325
+}

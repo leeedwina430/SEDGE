@@ -1,0 +1,36 @@
+{
+  "exact_train_validation_targets_seed_0": [
+    "discrete_squares_reference",
+    "discrete_squares_strict",
+    "linear",
+    "cubic",
+    "smoothstep",
+    "private_bridge_interaction",
+    "two_dimensional_bridge",
+    "multimodal_balanced_strict",
+    "multimodal_balanced_reference",
+    "multimodal_weighted_strict",
+    "multimodal_weighted_reference",
+    "multimodal_curved_strict",
+    "multimodal_curved_reference"
+  ],
+  "reference_max_abs_error": {
+    "discrete_squares_reference": 0.0,
+    "discrete_squares_strict": 0.0,
+    "linear": 0.0,
+    "cubic": 0.0,
+    "smoothstep": 0.0,
+    "private_bridge_interaction": 0.0,
+    "two_dimensional_bridge": 0.0,
+    "multimodal_balanced_strict": 0.0,
+    "multimodal_balanced_reference": 0.0,
+    "multimodal_weighted_strict": 0.0,
+    "multimodal_weighted_reference": 0.0,
+    "multimodal_curved_strict": 1.6653345369377348e-16,
+    "multimodal_curved_reference": 2.220446049250313e-16
+  },
+  "reference_atol": 1e-14,
+  "numerical_checks": "passed",
+  "cuda_available": false,
+  "full_training_rerun": false
+}

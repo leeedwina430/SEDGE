@@ -1,0 +1,507 @@
+{
+  "history": [
+    {
+      "step": 100,
+      "supported_nll": 0.18139098584651947,
+      "outside_support": 0
+    },
+    {
+      "step": 200,
+      "supported_nll": 0.18012455105781555,
+      "outside_support": 0
+    },
+    {
+      "step": 300,
+      "supported_nll": 0.1801140308380127,
+      "outside_support": 0
+    },
+    {
+      "step": 400,
+      "supported_nll": 0.1771123707294464,
+      "outside_support": 0
+    },
+    {
+      "step": 500,
+      "supported_nll": 0.17354370653629303,
+      "outside_support": 0
+    },
+    {
+      "step": 600,
+      "supported_nll": 0.16985434293746948,
+      "outside_support": 0
+    },
+    {
+      "step": 700,
+      "supported_nll": 0.16487862169742584,
+      "outside_support": 0
+    },
+    {
+      "step": 800,
+      "supported_nll": 0.16374607384204865,
+      "outside_support": 0
+    },
+    {
+      "step": 900,
+      "supported_nll": 0.16023136675357819,
+      "outside_support": 0
+    },
+    {
+      "step": 1000,
+      "supported_nll": 0.15997742116451263,
+      "outside_support": 0
+    },
+    {
+      "step": 1100,
+      "supported_nll": 0.16083699464797974,
+      "outside_support": 0
+    },
+    {
+      "step": 1200,
+      "supported_nll": 0.15709418058395386,
+      "outside_support": 0
+    },
+    {
+      "step": 1300,
+      "supported_nll": 0.15472041070461273,
+      "outside_support": 0
+    },
+    {
+      "step": 1400,
+      "supported_nll": 0.15371762216091156,
+      "outside_support": 0
+    },
+    {
+      "step": 1500,
+      "supported_nll": 0.15573936700820923,
+      "outside_support": 0
+    },
+    {
+      "step": 1600,
+      "supported_nll": 0.1539711058139801,
+      "outside_support": 0
+    },
+    {
+      "step": 1700,
+      "supported_nll": 0.1527460664510727,
+      "outside_support": 0
+    },
+    {
+      "step": 1800,
+      "supported_nll": 0.15009218454360962,
+      "outside_support": 0
+    },
+    {
+      "step": 1900,
+      "supported_nll": 0.14984971284866333,
+      "outside_support": 0
+    },
+    {
+      "step": 2000,
+      "supported_nll": 0.14959610998630524,
+      "outside_support": 0
+    },
+    {
+      "step": 2100,
+      "supported_nll": 0.14972655475139618,
+      "outside_support": 0
+    },
+    {
+      "step": 2200,
+      "supported_nll": 0.1500197798013687,
+      "outside_support": 0
+    },
+    {
+      "step": 2300,
+      "supported_nll": 0.147836372256279,
+      "outside_support": 0
+    },
+    {
+      "step": 2400,
+      "supported_nll": 0.14870023727416992,
+      "outside_support": 0
+    },
+    {
+      "step": 2500,
+      "supported_nll": 0.1475667804479599,
+      "outside_support": 0
+    },
+    {
+      "step": 2600,
+      "supported_nll": 0.14676010608673096,
+      "outside_support": 0
+    },
+    {
+      "step": 2700,
+      "supported_nll": 0.14523951709270477,
+      "outside_support": 0
+    },
+    {
+      "step": 2800,
+      "supported_nll": 0.1455061435699463,
+      "outside_support": 0
+    },
+    {
+      "step": 2900,
+      "supported_nll": 0.14553222060203552,
+      "outside_support": 0
+    },
+    {
+      "step": 3000,
+      "supported_nll": 0.14659160375595093,
+      "outside_support": 0
+    },
+    {
+      "step": 3100,
+      "supported_nll": 0.1454860270023346,
+      "outside_support": 0
+    },
+    {
+      "step": 3200,
+      "supported_nll": 0.1459100842475891,
+      "outside_support": 0
+    },
+    {
+      "step": 3300,
+      "supported_nll": 0.14529593288898468,
+      "outside_support": 0
+    },
+    {
+      "step": 3400,
+      "supported_nll": 0.14645157754421234,
+      "outside_support": 0
+    },
+    {
+      "step": 3500,
+      "supported_nll": 0.1449766755104065,
+      "outside_support": 0
+    },
+    {
+      "step": 3600,
+      "supported_nll": 0.14355793595314026,
+      "outside_support": 0
+    },
+    {
+      "step": 3700,
+      "supported_nll": 0.1440984159708023,
+      "outside_support": 0
+    },
+    {
+      "step": 3800,
+      "supported_nll": 0.1440134048461914,
+      "outside_support": 0
+    },
+    {
+      "step": 3900,
+      "supported_nll": 0.1455685794353485,
+      "outside_support": 0
+    },
+    {
+      "step": 4000,
+      "supported_nll": 0.14599981904029846,
+      "outside_support": 0
+    },
+    {
+      "step": 4100,
+      "supported_nll": 0.14208173751831055,
+      "outside_support": 0
+    },
+    {
+      "step": 4200,
+      "supported_nll": 0.1444767266511917,
+      "outside_support": 0
+    },
+    {
+      "step": 4300,
+      "supported_nll": 0.14129404723644257,
+      "outside_support": 0
+    },
+    {
+      "step": 4400,
+      "supported_nll": 0.14466825127601624,
+      "outside_support": 0
+    },
+    {
+      "step": 4500,
+      "supported_nll": 0.14348845183849335,
+      "outside_support": 0
+    },
+    {
+      "step": 4600,
+      "supported_nll": 0.14414852857589722,
+      "outside_support": 0
+    },
+    {
+      "step": 4700,
+      "supported_nll": 0.14415527880191803,
+      "outside_support": 0
+    },
+    {
+      "step": 4800,
+      "supported_nll": 0.14365191757678986,
+      "outside_support": 0
+    },
+    {
+      "step": 4900,
+      "supported_nll": 0.14530478417873383,
+      "outside_support": 0
+    },
+    {
+      "step": 5000,
+      "supported_nll": 0.14379191398620605,
+      "outside_support": 0
+    },
+    {
+      "step": 5100,
+      "supported_nll": 0.143389493227005,
+      "outside_support": 0
+    },
+    {
+      "step": 5200,
+      "supported_nll": 0.14439772069454193,
+      "outside_support": 0
+    },
+    {
+      "step": 5300,
+      "supported_nll": 0.1457700878381729,
+      "outside_support": 0
+    },
+    {
+      "step": 5400,
+      "supported_nll": 0.14513206481933594,
+      "outside_support": 0
+    },
+    {
+      "step": 5500,
+      "supported_nll": 0.1430833637714386,
+      "outside_support": 0
+    },
+    {
+      "step": 5600,
+      "supported_nll": 0.14513519406318665,
+      "outside_support": 0
+    },
+    {
+      "step": 5700,
+      "supported_nll": 0.14297272264957428,
+      "outside_support": 0
+    },
+    {
+      "step": 5800,
+      "supported_nll": 0.14349710941314697,
+      "outside_support": 0
+    },
+    {
+      "step": 5900,
+      "supported_nll": 0.14313572645187378,
+      "outside_support": 0
+    },
+    {
+      "step": 6000,
+      "supported_nll": 0.14276832342147827,
+      "outside_support": 0
+    },
+    {
+      "step": 6100,
+      "supported_nll": 0.1450645923614502,
+      "outside_support": 0
+    },
+    {
+      "step": 6200,
+      "supported_nll": 0.14282138645648956,
+      "outside_support": 0
+    },
+    {
+      "step": 6300,
+      "supported_nll": 0.1427229344844818,
+      "outside_support": 0
+    },
+    {
+      "step": 6400,
+      "supported_nll": 0.14318382740020752,
+      "outside_support": 0
+    },
+    {
+      "step": 6500,
+      "supported_nll": 0.14299353957176208,
+      "outside_support": 0
+    },
+    {
+      "step": 6600,
+      "supported_nll": 0.14305995404720306,
+      "outside_support": 0
+    },
+    {
+      "step": 6700,
+      "supported_nll": 0.14365950226783752,
+      "outside_support": 0
+    },
+    {
+      "step": 6800,
+      "supported_nll": 0.1432739794254303,
+      "outside_support": 0
+    },
+    {
+      "step": 6900,
+      "supported_nll": 0.1430647373199463,
+      "outside_support": 0
+    },
+    {
+      "step": 7000,
+      "supported_nll": 0.14155463874340057,
+      "outside_support": 0
+    },
+    {
+      "step": 7100,
+      "supported_nll": 0.14262522757053375,
+      "outside_support": 0
+    },
+    {
+      "step": 7200,
+      "supported_nll": 0.14369016885757446,
+      "outside_support": 0
+    },
+    {
+      "step": 7300,
+      "supported_nll": 0.1423676759004593,
+      "outside_support": 0
+    },
+    {
+      "step": 7400,
+      "supported_nll": 0.14125588536262512,
+      "outside_support": 0
+    },
+    {
+      "step": 7500,
+      "supported_nll": 0.14348825812339783,
+      "outside_support": 0
+    },
+    {
+      "step": 7600,
+      "supported_nll": 0.14453653991222382,
+      "outside_support": 0
+    },
+    {
+      "step": 7700,
+      "supported_nll": 0.14206700026988983,
+      "outside_support": 0
+    },
+    {
+      "step": 7800,
+      "supported_nll": 0.1420087218284607,
+      "outside_support": 0
+    },
+    {
+      "step": 7900,
+      "supported_nll": 0.14191456139087677,
+      "outside_support": 0
+    },
+    {
+      "step": 8000,
+      "supported_nll": 0.14317835867404938,
+      "outside_support": 0
+    },
+    {
+      "step": 8100,
+      "supported_nll": 0.1424550563097,
+      "outside_support": 0
+    },
+    {
+      "step": 8200,
+      "supported_nll": 0.1401796191930771,
+      "outside_support": 0
+    },
+    {
+      "step": 8300,
+      "supported_nll": 0.14249081909656525,
+      "outside_support": 0
+    },
+    {
+      "step": 8400,
+      "supported_nll": 0.1434556096792221,
+      "outside_support": 0
+    },
+    {
+      "step": 8500,
+      "supported_nll": 0.14329522848129272,
+      "outside_support": 0
+    },
+    {
+      "step": 8600,
+      "supported_nll": 0.14082373678684235,
+      "outside_support": 0
+    },
+    {
+      "step": 8700,
+      "supported_nll": 0.1418047547340393,
+      "outside_support": 0
+    },
+    {
+      "step": 8800,
+      "supported_nll": 0.14125986397266388,
+      "outside_support": 0
+    },
+    {
+      "step": 8900,
+      "supported_nll": 0.14152491092681885,
+      "outside_support": 0
+    },
+    {
+      "step": 9000,
+      "supported_nll": 0.14179176092147827,
+      "outside_support": 0
+    },
+    {
+      "step": 9100,
+      "supported_nll": 0.14014028012752533,
+      "outside_support": 0
+    },
+    {
+      "step": 9200,
+      "supported_nll": 0.1420965939760208,
+      "outside_support": 0
+    },
+    {
+      "step": 9300,
+      "supported_nll": 0.13983826339244843,
+      "outside_support": 0
+    },
+    {
+      "step": 9400,
+      "supported_nll": 0.1398933082818985,
+      "outside_support": 0
+    },
+    {
+      "step": 9500,
+      "supported_nll": 0.14061233401298523,
+      "outside_support": 0
+    },
+    {
+      "step": 9600,
+      "supported_nll": 0.14078614115715027,
+      "outside_support": 0
+    },
+    {
+      "step": 9700,
+      "supported_nll": 0.14156509935855865,
+      "outside_support": 0
+    },
+    {
+      "step": 9800,
+      "supported_nll": 0.14260593056678772,
+      "outside_support": 0
+    },
+    {
+      "step": 9900,
+      "supported_nll": 0.1401257961988449,
+      "outside_support": 0
+    },
+    {
+      "step": 10000,
+      "supported_nll": 0.14079071581363678,
+      "outside_support": 0
+    }
+  ],
+  "best_step": 9300,
+  "steps": 10000,
+  "selection": "supported validation NLL; support failures explicitly reported, full NLL infinite when any excluded"
+}
