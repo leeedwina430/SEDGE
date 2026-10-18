@@ -1,0 +1,41 @@
+{
+  "comparison_guard_ulps": 8,
+  "main_tolerance": "main",
+  "profile_id": "continuous_logp_tpsa_v0-2_evaluation_1",
+  "rdkit_version": "2023.09.6",
+  "region": {
+    "all": [
+      {
+        "ge": [
+          {
+            "property": "mol_logp"
+          },
+          5.0
+        ]
+      },
+      {
+        "ge": [
+          {
+            "property": "tpsa"
+          },
+          100.0
+        ]
+      }
+    ]
+  },
+  "schema_version": "continuous_generation_evaluation_v1",
+  "tolerances": {
+    "main": {
+      "mol_logp": 0.2,
+      "tpsa": 5.0
+    },
+    "relaxed": {
+      "mol_logp": 0.5,
+      "tpsa": 10.0
+    },
+    "strict": {
+      "mol_logp": 0.1,
+      "tpsa": 2.0
+    }
+  }
+}
