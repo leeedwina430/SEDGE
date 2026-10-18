@@ -1,7 +1,5 @@
 # SEDGE: Property-to-Molecule Generation
 
-This public snapshot omits `src/sedge_molecule/data.py`; preparation, training, generation and some tests require that module.
-
 ## Install
 
 Requires Python 3.10–3.12 and a CUDA GPU with BF16 support for the default training configuration. Install a compatible PyTorch build, then run from this directory:
